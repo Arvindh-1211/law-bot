@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+.logo{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 40px;
+}
+.harvey-icon{
+    height: 100%;
+    width: auto;
+}
+.name{
+    margin: -15px;
+    font-family: "Qwitcher Grypen";
+    background-color: inherit;
+    color: #fff;
+}
