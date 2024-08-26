@@ -3,7 +3,7 @@
     background-color: #222222;
     font-family: "Poppins", sans-serif;
 }
-.lawBot{
+.landingPage{
     display:flex;
 }
 .MenuBar{
@@ -14,29 +14,25 @@
     margin: 0px;
     padding: 0px;
 }
-.TitleBar{
-    position: fixed;
-    top: 0px;
-}
-.InputBox{
-    position: fixed;
-    bottom: 50px;
+.chatPage{
+    flex: 1;
     display: flex;
-    justify-content: center;
-    width: 96vw;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.TitleBar{
+    width: 90%;
 }
 .chatAreaContainer{
     color: #fff;
-    position: fixed;
-    top: 74px;
-    bottom: 102px;
+    /* flex: 1; */
+    height: 76vh;
     display: flex;
     justify-content: center;
-    width: 95vw;
+    width: 100%;
 }
-.chatArea{
-    /* border: 1px solid red; */
-    width: 70vw;
-    overflow-y: scroll;
-    scrollbar-width: none;
+.InputBox{
+    width: 60%;
+    margin-bottom: 7vh;
 }

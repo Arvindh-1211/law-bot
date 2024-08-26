@@ -1,0 +1,26 @@
+.chatArea{
+    width: 100%;
+    padding: 0 12vw;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.prompt, .reply {
+    display: flex;
+    margin-bottom: 2vh;
+}
+.sender{
+    margin-right: 1vw;
+}
+.prompt > .sender > *{
+    height: 30px;
+    width: auto;
+}
+
+.reply > .sender > *{
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: auto;
+    margin: 0px -18px 0px -18px;
+    padding-top: 1vw;
+}

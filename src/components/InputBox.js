@@ -4,12 +4,12 @@ import { IoMdSend } from "react-icons/io";
 
 import { useState } from 'react';
 
-function InputBox( { sendPrompt } ){
-    const [prompt, setPrompt] = useState('')
+function InputBox( { setPrompt } ){
+    const [input, setInput] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        sendPrompt(prompt)
+        setPrompt(input)
     }
 
     return(
@@ -19,7 +19,7 @@ function InputBox( { sendPrompt } ){
                 <FaLink className='icon link'/>
             </div>
             <form onSubmit={handleSubmit}>
-                <input onChange={(e) => { setPrompt(e.target.value) }} type='text' placeholder='Ask me anything..'></input>
+                <input onChange={(e) => { setInput(e.target.value) }} type='text' placeholder='Ask me anything..'></input>
             </form>
             <div className='iconContainer' onClick={handleSubmit}>
                 <IoMdSend className='icon send'/>

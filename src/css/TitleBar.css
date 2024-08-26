@@ -3,12 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
-    margin: 10px;
-    padding: 5px;
-    height: 40px;
+    margin: 1vh;
+    padding: 1vh;
+    height: 6vh;
 }
-.authentication > * {
+.authentication > span {
     width: 50px;
     border-radius: 7px;
     margin: 5px;
