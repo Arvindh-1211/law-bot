@@ -1,0 +1,78 @@
+.sidenav{
+    width: 180px;
+    background-color: #081421;
+    position: absolute;
+    height: 87vh;
+    padding: 0 30px;
+    left: -160px;
+    transition: 1s;
+    justify-content: center;
+    z-index: 1;
+  }
+  .sidenav.active{
+    left: 40px;
+  }
+  .static {
+    width: 4vh;
+    position: absolute;
+    background-color: #081421;
+    height: 88vh;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  header {
+    padding: 30px;
+    background-color: #081421;
+    color: white;
+    height: 40px;
+  }
+  header svg{
+    font-size: 40px;
+  }
+  header svg:hover{
+    cursor: pointer;
+  }
+  
+  .nav-link{
+    color: #eaecef;
+    margin-top: 1px;
+  }
+  .nav-link svg{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 25px;
+  }
+  .nav-link svg:hover,
+  .nav-link svg.active{
+    background: #ffffff5c;
+  }
+  
+  .menu-items{
+    color: white;
+    margin-top: 20px;
+  }
+  .menu-items-bottom{
+    color: white;
+    margin-bottom: 18px;
+  }
+  
+  .extra2{
+    margin-top: 34px;
+  }
+  .extra1{
+    margin-bottom: 30px;
+  }
+  .upper svg{
+    margin-top: 10px;
+  }
+  
+  .bottom-links {
+    position: absolute;
+    bottom: 10px;
+  }
+  .bottom-links svg{
+    left: 10px;
+    margin-bottom: 10px;
+  }
