@@ -6,14 +6,6 @@
 .landingPage{
     display:flex;
 }
-/* .MenuBar{
-    width: 4vw;
-    height: 100vh;
-    color: white;
-    background-color: black;
-    margin: 0px;
-    padding: 0px;
-} */
 .chatPage{
     flex: 1;
     display: flex;

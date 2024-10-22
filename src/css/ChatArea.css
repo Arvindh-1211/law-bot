@@ -1,8 +1,11 @@
 .chatArea{
     width: 100%;
     padding: 0 12vw;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scrollbar-width: none;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .prompt, .reply {
     display: flex;
@@ -23,4 +26,32 @@
     width: auto;
     margin: 0px -18px 0px -18px;
     padding-top: 1vw;
+}
+
+
+.PredefinedPrompt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.PredefinedPrompt > div > div{
+    height: 15vh;
+    width: 30vh;
+    margin: 4vh;
+    padding: 1vh;
+    border-radius: 10px;
+    color: #fffa;
+    background-color: #707070aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PredefinedPrompt > div > div:hover{
+    color: #fff;
+    background-color: #707070;
+    box-shadow: 0px 0px 5px 2px #fff1;
+    cursor: pointer;
 }

@@ -16,6 +16,10 @@
 .signInBtn{
     background-color: #fff;
 }
+.authentication > *:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 2px #fff1;    
+}
 .signUpBtn{
     color: #fff;
     background-color: #333;

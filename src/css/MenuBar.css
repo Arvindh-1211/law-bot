@@ -1,42 +1,70 @@
 .menuBar{
-    width: 4vw;
+    /* width: 4vw; */
     height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
-.menuBarItems{
+.menuBarContainer{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: black;
+    background-color: inherit;
+    padding: 1vh;
 }
-.menuBarIcon > *{
-    height: 4vh;
-    width: auto;
-    background-color: black;
+.tripledashIcon > *{
+    height: auto;
+    width: 4vh;
+    background-color: inherit;
     padding-top: 2vh;
 }
-.menuBarIcon{
-    background-color: black;
+.tripledashIcon{
+    background-color: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-bottom: 2vh;
+    padding-left: 1vh;
 }
-.menuBarItems > * {
+.menuBarContainer > * {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: inherit;
 }
-.top > *, .bottom > * {
-    background-color: black;
-    height: 3vh;
-    width: auto;
-    margin: 1vh;
+.top > * , .bottom > * {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
 }
 
+.menuBarItem:hover{
+    cursor: pointer;
+    background-color: #333333;
+}
+.menuBarIcons {
+    background-color: inherit;
+    height: 3vh;
+    width: 4vh;
+    margin: 1vh;
+}
+.menuBarItemName{
+    transition: width 1s;
+}
+.menuBarItemName.active{
+    background-color: inherit;
+    width: 20vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menuBarItemName.inactive{
+    width: 0vh;
+    background-color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+}
 .bottom{
     margin-bottom: 3vh;
 }

@@ -10,6 +10,7 @@ function InputBox( { setPrompt } ){
     const handleSubmit = (e) => {
         e.preventDefault()
         setPrompt(input)
+        setInput('')
     }
 
     return(
@@ -19,7 +20,7 @@ function InputBox( { setPrompt } ){
                 <FaLink className='icon link'/>
             </div>
             <form onSubmit={handleSubmit}>
-                <input onChange={(e) => { setInput(e.target.value) }} type='text' placeholder='Ask me anything..'></input>
+                <input onChange={(e) => { setInput(e.target.value) }} value={ input } type='text' placeholder='Ask me anything..'></input>
             </form>
             <div className='iconContainer' onClick={handleSubmit}>
                 <IoMdSend className='icon send'/>

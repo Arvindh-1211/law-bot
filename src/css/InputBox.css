@@ -47,6 +47,9 @@ input:focus{
     margin: 10px;
     background-color: inherit;
 }
+.iconContainer:hover{
+    cursor: pointer;
+}
 .iconContainer:hover > .icon{
     color: #ffff;
 }
